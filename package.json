@@ -1,0 +1,35 @@
+{
+  "name": "express-firebase",
+  "version": "1.0.0",
+  "description": "Demo CRUD API with firebase",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run watch\" \"nodemon -q dist/server.js\"",
+    "serve": "npm run build && node dist/server.js",
+    "build": "npm run clean && tsc",
+    "watch": "npm run clean && tsc --watch",
+    "clean": "rimraf dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Najmul Hosain",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "firebase-admin": "^11.7.0",
+    "joi": "^17.9.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.16.1",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
+  }
+}
