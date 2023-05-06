@@ -1,4 +1,6 @@
 # Express-Firebase CRUD sample
+I am using firestore database for this project
+
 ## Setup
 ### Add serviceAccountKey.json
 Grab this _serviceAccountKey.json_ informations from firebase console and add it to the root directory of your project.
